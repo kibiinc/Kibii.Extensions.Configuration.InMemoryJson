@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Kibii.Extensions.Configuration.InMemoryJson</RootNamespace>
+    <SignAssembly>false</SignAssembly>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/kibiinc/Kibii.Extensions.Configuration.InMemoryJson/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/kibiinc/Kibii.Extensions.Configuration.InMemoryJson</PackageProjectUrl>
+    <PackageIconUrl>https://beta.kibii.tv/favicon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/kibiinc/Kibii.Extensions.Configuration.InMemoryJson</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Copyright>https://github.com/kibiinc/Kibii.Extensions.Configuration.InMemoryJson/COPYRIGHT</Copyright>
+    <Description>This library provides a way to add in-memory JSON to a ConfigurationBuilder. It allows for remote web configuration loading as well as grabbing JSON from command line, environment variables, or any location that isn't a physical path located on the target machine.</Description>
+    <PackageReleaseNotes>First release, and hopefully the last one ever.</PackageReleaseNotes>
+    <PackageTags>ASP.NET, ASP.NET Core, .NET Core, .NET Standard, Microsoft.Extensions.Configuration, AddJsonFile, In Memory Json for ConfigurationBuilder, ConfigurationBuilder, JSON, Web Configuration</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Kibii.Extensions.Configuration.InMemoryJson.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Moq" Version="4.9.0" />
+  </ItemGroup>
+
+</Project>
